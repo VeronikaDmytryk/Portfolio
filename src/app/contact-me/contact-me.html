@@ -1,0 +1,31 @@
+<div class="contacts" id="contacts">
+    <div class="container">
+        <h2 class="section-title">Contact me</h2>
+        <p class="overview">Looking forward to hearing from you!</p>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Name</label>
+                        <input type="text" class="form-control" [ngModel]="name" required name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Your email" name="email" [ngModel]="email" required>
+                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Message</label>
+                        <textarea class="form-control" name="message" placeholder="Type your message here" [ngModel]="message" required></textarea>
+                    </div>
+                    <button type="submit" class="hvr-back-pulse" id="form-submit">Send message</button>
+                    <p class="thankyou" *ngIf="success">Thank you for your message. I'll contact you shortly</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="poster" src="../assets/email.png" alt="work hard">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

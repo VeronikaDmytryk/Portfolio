@@ -1,0 +1,41 @@
+.main-screen {
+    background: url("../../assets/main-screen.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+h1{
+    margin-top: 22vh;
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    width: 46%;
+    font-size: 130%;
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .main-screen {
+        min-height: 500px;
+    }
+    h1{
+        margin-top: 10%;
+    }
+    p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-screen {
+        height: 100vh;
+    }
+    h1{
+        margin-top: 18vh;
+    }
+
+}

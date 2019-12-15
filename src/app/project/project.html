@@ -1,0 +1,43 @@
+<div class="project-page">
+    <header></header>
+    <div class="container">
+        <h1>{{project.name}}</h1>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="project-description">{{project.description}}</p>
+                <div class="technologies">
+                    <ul>
+                        <li *ngFor="let item of project.technologies">{{item}}</li>
+                    </ul>
+                </div>
+                <div class="buttons" *ngIf="project.type == 'development'">
+                    <a href={{project.repositoryUrl}} target="_blank" *ngIf="project.repositoryUrl">
+                        <button class="sourse-code">See Sourse code</button>
+                    </a>
+                    <a href={{project.demoUrl}} target="_blank" *ngIf="project.demoUrl">
+                        <button class="hvr-back-pulse">See Demo</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="slider" style="position: relative">
+                    <div class="controls" *ngIf="project.images.length != 1">
+                        <div class="left" (click)="changeSlide(-1)">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="right" (click)="changeSlide(1)">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src={{project.images[currentSlide]}} class="project-photo" alt="main photo" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>

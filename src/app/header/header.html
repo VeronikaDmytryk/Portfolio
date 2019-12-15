@@ -1,0 +1,15 @@
+<div [ngClass]="{'header-light': !path, 'header-dark': path}" >
+    <div class="container">
+        <a [routerLink]="['']" class="name">Veronika
+            <span>Dmytryk</span>
+        </a>
+        <div class="left-menu">
+            <ul class="left-menu_links">
+                <li class="hvr-underline-from-center"><a scrollTo [routerLink]="''" fragment="portfolio">Portfolio</a></li>
+                <li class="hvr-underline-from-center"><a scrollTo [routerLink]="''" fragment="skills">Skills</a></li>
+                <li class="hvr-underline-from-center"><a scrollTo [routerLink]="''" fragment="resume">Resume</a></li>
+            </ul>
+           <a scrollTo [routerLink]="''" fragment="contacts"><button class="hvr-back-pulse">Contact Me</button></a>
+        </div>
+    </div>
+</div>

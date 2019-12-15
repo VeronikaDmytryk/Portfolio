@@ -1,0 +1,27 @@
+$yellow: #ffd400;
+
+.resume{
+    margin-top: 30px;
+    color: #000;
+    text-align: center;
+}
+
+button{
+    background: $yellow;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    a{
+        color: #000;
+        font-size: 16px;
+    }
+    a:hover, a:visited, a:active {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+

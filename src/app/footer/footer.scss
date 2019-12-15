@@ -1,0 +1,44 @@
+$yellow: #ffd400;
+
+.footer{
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 80px auto 0 auto;
+}
+
+.social-links {
+    float: right;
+    padding: 0;
+    li {
+        cursor: pointer;
+        display: inline-block;
+        a{
+            padding: 0 15px;
+            color: #000;
+            transition: all 0.4s ease;
+        }
+        a:hover, a:active {
+            color: #000;
+            color: $yellow;
+        }
+    }
+}
+
+.credentials {
+    display: inline-block;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 5px;
+        display: inline-block;
+        float: none;
+    }
+}

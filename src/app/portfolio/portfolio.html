@@ -1,0 +1,23 @@
+<div class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">My works</h2>
+        <ul class="portfolio-menu nav">
+            <li (click)="changeValue('')" class="hvr-underline-from-center" [ngClass]="{ 'active': !value}">All</li>
+            <li (click)="changeValue('development')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'development'}">Web Development</li>
+            <li (click)="changeValue('design')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'design'}">Design</li>
+        </ul>
+        <div class="portfolio-previews">
+            <div class="row">
+                <div *ngFor="let project of projectsList | portfolioPipe: value" [class.selected]="project === selectedProject" (click)="onSelect(project)" class="col-md-4 col-sm-6">
+                    <a [routerLink]="['', project.id]">
+                        <div class="one-project" [ngStyle]="{'background': 'url(' + project.previewImage + ')', 'background-size': 'cover'}">
+                            <div class="project-info hvr-trim">
+                                {{project.name}}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

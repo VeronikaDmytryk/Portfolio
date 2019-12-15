@@ -1,0 +1,106 @@
+$yellow: #ffd400;
+
+.project-page {
+    padding-bottom: 80px;
+}
+
+h1{
+    display: inline-block;
+    margin: 30px 0 20px 0;
+}
+
+.project-description{
+    margin-top: 20px;
+    font-size: 16px; 
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button{
+    background: $yellow;
+    border: 2px solid $yellow;
+    margin-right: 10px;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    a,
+    a:hover,
+    a:visited,
+    a:active{
+        padding: 0;
+        color: #000;
+    }
+}
+.sourse-code{
+    background: unset;
+    border: 2px solid $yellow;
+    margin-right: 10px;
+    color: #000;
+    top: 2px;
+    position: relative;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+.technologies{
+    margin: 20px 0;
+    ul{
+        padding: 0;
+    }
+    li{
+        margin-right: 20px;
+        font-weight: 600;
+        padding: 5px 0;
+        display: inline-block;
+    }
+}
+
+.controls {
+    width: 100%;
+    position: absolute;
+    padding-top: 20%;
+    color: #ccc;
+    font-size: 40px;
+    .left{
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    i {
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+    i:hover,
+    i:active{
+        color: $yellow;    
+    }
+}
+
+.project-photo {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #cecece;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus{
+    padding: 0;
+    color: #000;
+}
+
+@media screen and (max-width: 640px) {
+    .project-page {
+        padding-bottom: 120px;
+    }
+}
