@@ -9,10 +9,44 @@ export const environment = {
 
 export const projects = [
   {
+    "id": "authentication-controller",
+    "name": "User Authentication Controller",
+    "description": "User authentification controller have five main functionalities: sign-up, login, logout, change password and delete user. Usernames and passwords are stored in custom hash table, which allows us quick efficient search O(1). The program also keeps users' old passwords and does not allow users to change password to the old one.",
+    "type": "cs",
+    "technologies": [
+      "Java",
+      "Eclipse",
+      "jUnit"
+    ],
+    "repositoryUrl": "https://github.com/VeronikaDmytryk/UserAuthentificationController",
+    "previewImage": "../assets/projects/authenticationController/thumbnail.jpg",
+    "images": [
+      "../assets/projects/authenticationController/1.png",
+      "../assets/projects/authenticationController/2.png",
+      "../assets/projects/authenticationController/3.png"
+    ]
+  },
+  {
+    "id": "barcode-scanner",
+    "name": "Barcode Scanner",
+    "description": "Barcode Scanner application allows a user to provide a custom dataset (an input file) with items with UPC code and description. It stores the data in a binary search tree. using a UPC code allows users to search quickly and efficiently - O(logN)",
+    "type": "cs",
+    "technologies": [
+      "Java",
+      "Eclipse",
+      "jUnit"
+    ],
+    "repositoryUrl": "https://github.com/VeronikaDmytryk/BarcodeScanner",
+    "previewImage": "../assets/projects/barcodeScanner/thumbnail.jpg",
+    "images": [
+      "../assets/projects/barcodeScanner/1.png"
+    ]
+  },
+  {
     "id": "interviews",
     "name": "Interview Management System - Angular",
     "description": "Designed and implemented Interview Management System (IMS). IMS stores data of interviews and candidates in a MongoDB. Users can look up interviews data, search and filter interviews, edit interviews, see candidates profiles, see reports and customize them by different categories.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "Angular 5",
       "HTML5",
@@ -38,7 +72,7 @@ export const projects = [
     "id": "volvo",
     "name": "Volvo Samara - Responsive Landing Page",
     "description": "Cross-browser landing page with a responsive and adaptive design for a car dealership in Samara, Russia. Includes CSS animations, validations, pop-up windows. Fully responsive layout design.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "HTML5",
       "CSS3",
@@ -62,7 +96,7 @@ export const projects = [
     "id": "tasker",
     "name": "Tasker - React.js",
     "description": "Designed and implemented responsive Task Manager Application (light version of Trello) allows users to add, edit and delete tasks. All tasks will be stored in the user's local storage. A Simple user guide is included in form of pre-defined tasks which explain how to use tasker. Responsive layout allows to use tasker on any platform using your web-browser.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "React.js",
       "CSS3",
@@ -80,7 +114,7 @@ export const projects = [
     "id": "calculator",
     "name": "Calculator App - React.js",
     "description": "Designed and implemented simple calculator that supports addition / subtraction / multiplication / division / power. Developed without using JavaScript eval() function. The calculator handles division by zero. Designed under inspiration of Fluent Design System by Microsoft.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "React.js",
       "CSS3",
@@ -98,7 +132,7 @@ export const projects = [
     "id": "freelance-show",
     "name": "Freelance Show - Responsive Landing Page",
     "description": "Promotional 5-screens Landing Page for educational project WayUp. Includes animations, validations pop-up windows and custom counter. Fully responsive and adaptive layout design.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "HTML5",
       "CSS3",
@@ -119,7 +153,7 @@ export const projects = [
   {
     "id": "freelance-design",
     "name": "Freelance Design - Responsive Landing Page",
-    "type": "development",
+    "type": "web",
     "description": "Promotional 8-screens Landing Page for educational master classes by WayUp. Custom CSS animations were created for this project. Includes CSS animations, validations, pop-up windows, PHP back-end implementation for capturing submitted forms. Fully responsive and adaptive layout design.",
     "technologies": [
       "HTML5",
@@ -145,7 +179,7 @@ export const projects = [
     "id": "web-games",
     "name": "Web Games - Responsive Landing Page",
     "description": "Promotional 7-screens Landing Page for educational event by WayUp. Includes CSS animations, validations, pop-up windows, PHP back-end implementation for capturing submitted forms. Fully responsive and adaptive layout design.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "HTML5",
       "CSS3",
@@ -168,7 +202,7 @@ export const projects = [
     "id": "frontend-genius",
     "name": "Frontend Genius - Responsive Landing Page",
     "description": "Cross-browser responsive and adaptive 8-screens Landing Page for educational master class by WayUp. Includes CSS animations, validations, pop-up windows. Fully responsive and adaptive layout design.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "HTML5",
       "CSS3",
@@ -191,7 +225,7 @@ export const projects = [
     "id": "first-pixel",
     "name": "First-Pixel - Responsive Landing Page",
     "description": "Promotional 9-screens Landing Page for online marathon by WayUp. Custom CSS animations were created for this project. Includes CSS animations, validations, pop-up windows, PHP backend implementation for capturing submitted forms. Fully responsive layout design.",
-    "type": "development",
+    "type": "web",
     "technologies": [
       "HTML5",
       "CSS3",

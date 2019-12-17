@@ -3,7 +3,8 @@
         <h2 class="section-title">My works</h2>
         <ul class="portfolio-menu nav">
             <li (click)="changeValue('')" class="hvr-underline-from-center" [ngClass]="{ 'active': !value}">All</li>
-            <li (click)="changeValue('development')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'development'}">Web Development</li>
+            <li (click)="changeValue('cs')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'cs'}">Software Development</li>
+            <li (click)="changeValue('web')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'web'}">Web Development</li>
             <li (click)="changeValue('design')" class="hvr-underline-from-center" [ngClass]="{'active': value == 'design'}">Design</li>
         </ul>
         <div class="portfolio-previews">

@@ -11,7 +11,7 @@
                         <li *ngFor="let item of project.technologies">{{item}}</li>
                     </ul>
                 </div>
-                <div class="buttons" *ngIf="project.type == 'development'">
+                <div class="buttons" *ngIf="project.type !== 'design'">
                     <a href={{project.repositoryUrl}} target="_blank" *ngIf="project.repositoryUrl">
                         <button class="sourse-code">See Sourse code</button>
                     </a>
