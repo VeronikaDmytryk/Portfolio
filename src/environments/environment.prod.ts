@@ -61,7 +61,7 @@ export const projects = [
       "../assets/projects/remotable/3.png",
       "../assets/projects/remotable/4.png"
     ],
-    "demoUrl": "http://veronikadmytryk.net/projects/remotable/interviews"
+    "demoUrl": "/projects/remotable"
   },
   {
     "id": "volvo",
@@ -85,7 +85,7 @@ export const projects = [
       "../assets/projects/volvo/1.png"
     ],
     "previewImage": "../assets/projects/volvo/thumbnail.png",
-    "demoUrl": "http://veronikadmytryk.net/webpages/volvo/"
+    "demoUrl": "/webpages/volvo/"
   },
   {
     "id": "tasker",
@@ -103,7 +103,7 @@ export const projects = [
     "images": [
       "../assets/projects/tasker/1.png"
     ],
-    "demoUrl": "http://veronikadmytryk.net/projects/tasker/"
+    "demoUrl": "/projects/tasker/"
   },
   {
     "id": "calculator",
@@ -121,7 +121,7 @@ export const projects = [
     "images": [
       "../assets/projects/calculator/1.png"
     ],
-    "demoUrl": "http://veronikadmytryk.net/projects/calculator/"
+    "demoUrl": "/projects/calculator/"
   },
   {
     "id": "freelance-show",
@@ -143,7 +143,7 @@ export const projects = [
       "../assets/projects/freelanceshow/1.png"
     ],
     "previewImage": "../assets/projects/freelanceshow/thumbnail.png",
-    "demoUrl": "http://veronikadmytryk.net/webpages/freelanceshow/"
+    "demoUrl": "/webpages/freelanceshow/"
   },
   {
     "id": "freelance-design",
@@ -163,7 +163,7 @@ export const projects = [
       "PHP (forms)"
     ],
     "repositoryUrl": null,
-    "demoUrl": "http://veronikadmytryk.net/webpages/freelance-design/",
+    "demoUrl": "/webpages/freelance-design/",
     "images": [
       "../assets/projects/freelancedesign/1.png"
     ],
@@ -191,7 +191,7 @@ export const projects = [
       "../assets/projects/webgames/1.png"
     ],
     "previewImage": "../assets/projects/webgames/thumbnail.png",
-    "demoUrl": "http://veronikadmytryk.net/webpages/webgames/"
+    "demoUrl": "/webpages/webgames/"
   },
   {
     "id": "frontend-genius",
@@ -214,7 +214,7 @@ export const projects = [
       "../assets/projects/frontendgenius/1.png"
     ],
     "previewImage": "../assets/projects/frontendgenius/thumbnail.png",
-    "demoUrl": "http://veronikadmytryk.net/webpages/frontend-genius/"
+    "demoUrl": "/webpages/frontend-genius/"
   },
   {
     "id": "first-pixel",
@@ -238,7 +238,7 @@ export const projects = [
       "../assets/projects/firstpixel/1.png"
     ],
     "previewImage": "../assets/projects/firstpixel/thumbnail.png",
-    "demoUrl": "http://veronikadmytryk.net/webpages/first-pixel/"
+    "demoUrl": "/webpages/first-pixel/"
   },
   {
     "id": "furry-house",

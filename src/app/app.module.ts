@@ -18,6 +18,8 @@ import {ScrollToModule} from 'ng2-scroll-to';
 const appRoutes: Routes = [
   { path: '', component: MainScreenComponent },
   { path: ':id', component: ProjectComponent },
+  { path: 'projects/remotable', redirectTo: '/projects/remotable' },
+  { path: 'projects/remotable/**', redirectTo: '/projects/remotable' },
   { path: '**', redirectTo: '' }
 ];
 
