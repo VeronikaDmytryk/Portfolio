@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import { Router } from '@angular/router';
 import {projects} from "../../environments/environment";
+
 
 @Component({
   selector: 'app-project',
@@ -12,11 +14,19 @@ export class ProjectComponent implements OnInit {
   currentSlide = 0;
   showAllPhotos;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.project = this.getProjectById(params['id']);
+      let project = this.getProjectById(params['id'])
+      console.log(project);
+      if (project) {
+        this.project = this.getProjectById(params['id']);
+      } else {
+        this.project = null;
+        localStorage.removeItem('path');
+        this.router.navigate(['']);
+      }
     });
   }
 
@@ -25,7 +35,7 @@ export class ProjectComponent implements OnInit {
   }
 
   changeSlide(int: number){
-    if(int>0){
+    if(int > 0){
       if(this.project.images[this.currentSlide+1] != undefined){
         this.currentSlide = this.currentSlide+1;
       } else{

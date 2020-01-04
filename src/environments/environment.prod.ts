@@ -61,7 +61,7 @@ export const projects = [
       "../assets/projects/remotable/3.png",
       "../assets/projects/remotable/4.png"
     ],
-    "demoUrl": "/projects/remotable"
+    "demoUrl": "/projects/remotable/"
   },
   {
     "id": "volvo",

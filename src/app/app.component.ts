@@ -13,12 +13,10 @@ export class AppComponent {
     let path = localStorage.getItem('path');
     if(path) {
       localStorage.removeItem('path');
-      if (path.includes("projects/remotable")) {
+      if (path.includes('projects/remotable')) {
         let remotablePath = location.protocol + "//" + document.location.hostname + '/projects/remotable';
-        console.log("redirect to " + remotablePath);
         window.location.assign(remotablePath);
       } else {
-        console.log("navigate to " + path);
         this.router.navigate([path]);
       }
       
